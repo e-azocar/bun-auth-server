@@ -2,10 +2,15 @@
   "name": "bun-auth-server",
   "version": "1.0.28",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts",
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
+    "@elysiajs/bearer": "^0.3.0",
+    "@elysiajs/cors": "^0.3.0",
+    "@elysiajs/jwt": "^0.3.0",
+    "@elysiajs/swagger": "^0.3.0",
     "elysia": "latest"
   },
   "devDependencies": {
